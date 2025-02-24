@@ -1,8 +1,8 @@
 /* style.css */
 body {
     font-family: 'Fira Code', monospace;
-    background-color: #08192D; /* Dark blue background */
-    color: #B0D0FF; /* Light blue text */
+    background-color: #0a0f1a; /* Original dark mode background */
+    color: #ffffff; /* Original text color */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -22,15 +22,14 @@ body {
 h1 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #66A3FF; /* Brighter blue */
 }
 
 p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #88BBFF; /* Softer blue */
 }
 
+/* Links - Only GitHub & YouTube text are blue */
 .links {
     display: flex;
     gap: 20px;
@@ -38,13 +37,13 @@ p {
 
 .link {
     text-decoration: none;
-    color: #66A3FF;
+    color: #4ea8de; /* Blue color */
     font-size: 1.2rem;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .link:hover {
-    color: #99CCFF;
+    color: #6ec1e4;
     transform: scale(1.1);
 }
 
@@ -57,41 +56,34 @@ p {
     top: 20px;
     right: 20px;
     transition: transform 0.2s ease, color 0.2s ease;
-    color: #66A3FF;
+    color: #ffffff;
 }
 
 #theme-toggle:hover {
     transform: rotate(20deg);
-    color: #99CCFF;
+    color: #cccccc;
 }
 
 /* Light Mode */
 .light-mode {
-    background-color: #D9ECFF; /* Light blue background */
-    color: #002B5C; /* Darker blue text */
-}
-
-.light-mode h1 {
-    color: #004A99; /* Deeper blue */
-}
-
-.light-mode p {
-    color: #003366; /* Slightly darker blue */
+    background-color: #f0f8ff; /* Light mode background */
+    color: #000000; /* Default text color */
 }
 
 .light-mode .link {
-    color: #004A99;
+    color: #0055aa; /* Blue color in light mode */
 }
 
 .light-mode .link:hover {
-    color: #002B5C;
+    color: #0033cc;
 }
 
 .light-mode #theme-toggle {
-    color: #004A99;
+    color: #000000;
 }
 
 .light-mode #theme-toggle:hover {
-    color: #002B5C;
+    color: #333333;
 }
+
 
