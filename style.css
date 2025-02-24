@@ -1,8 +1,8 @@
 /* style.css */
 body {
     font-family: 'Fira Code', monospace;
-    background-color: #0a0f1a; /* Original dark mode background */
-    color: #ffffff; /* Original text color */
+    background-color: #121212;
+    color: #ffffff;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -22,35 +22,30 @@ body {
 h1 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #ffffff; /* Original text color */
 }
 
 p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #ffffff; /* Original text color */
 }
 
-/* Links */
 .links {
     display: flex;
     gap: 20px;
 }
 
-/* Make only GitHub and YouTube links blue */
-.github-link, .youtube-link {
+.link {
     text-decoration: none;
-    color: #4ea8de; /* Blue color */
+    color: #ffcc00;
     font-size: 1.2rem;
-    transition: color 0.3s ease, transform 0.2s ease;
+    transition: color 0.3s ease;
 }
 
-.github-link:hover, .youtube-link:hover {
-    color: #6ec1e4;
+.link:hover {
+    color: #ffaa00;
     transform: scale(1.1);
 }
 
-/* Theme toggle button */
 #theme-toggle {
     background: none;
     border: none;
@@ -59,41 +54,25 @@ p {
     position: absolute;
     top: 20px;
     right: 20px;
-    transition: transform 0.2s ease, color 0.2s ease;
-    color: #ffffff;
+    transition: transform 0.2s ease;
 }
 
 #theme-toggle:hover {
     transform: rotate(20deg);
-    color: #cccccc;
 }
 
 /* Light Mode */
 .light-mode {
-    background-color: #f0f8ff; /* Light mode background */
-    color: #000000; /* Default text color */
-}
-
-.light-mode h1, 
-.light-mode p {
-    color: #000000; /* Keep other text black */
-}
-
-.light-mode .github-link, .light-mode .youtube-link {
-    color: #0055aa; /* Blue color in light mode */
-}
-
-.light-mode .github-link:hover, .light-mode .youtube-link:hover {
-    color: #0033cc;
-}
-
-.light-mode #theme-toggle {
+    background-color: #ffffff;
     color: #000000;
 }
 
-.light-mode #theme-toggle:hover {
-    color: #333333;
+.light-mode .link {
+    color: #0055ff;
 }
 
+.light-mode .link:hover {
+    color: #0033cc;
+}
 
 
