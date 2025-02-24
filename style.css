@@ -1,7 +1,7 @@
 /* style.css */
 body {
     font-family: 'Fira Code', monospace;
-    background-color: #121212;
+    background-color: #0a0f1a;
     color: #ffffff;
     text-align: center;
     display: flex;
@@ -22,11 +22,13 @@ body {
 h1 {
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #4ea8de;
 }
 
 p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    color: #8bb7f0;
 }
 
 .links {
@@ -36,13 +38,13 @@ p {
 
 .link {
     text-decoration: none;
-    color: #ffcc00;
+    color: #4ea8de;
     font-size: 1.2rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .link:hover {
-    color: #ffaa00;
+    color: #6ec1e4;
     transform: scale(1.1);
 }
 
@@ -54,23 +56,41 @@ p {
     position: absolute;
     top: 20px;
     right: 20px;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, color 0.2s ease;
+    color: #4ea8de;
 }
 
 #theme-toggle:hover {
     transform: rotate(20deg);
+    color: #6ec1e4;
 }
 
 /* Light Mode */
 .light-mode {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #f0f8ff;
+    color: #0a0f1a;
+}
+
+.light-mode h1 {
+    color: #0055aa;
+}
+
+.light-mode p {
+    color: #004080;
 }
 
 .light-mode .link {
-    color: #0055ff;
+    color: #0055aa;
 }
 
 .light-mode .link:hover {
-    color: #0033cc;
+    color: #003366;
+}
+
+.light-mode #theme-toggle {
+    color: #0055aa;
+}
+
+.light-mode #theme-toggle:hover {
+    color: #003366;
 }
