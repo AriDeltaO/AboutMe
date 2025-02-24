@@ -22,31 +22,35 @@ body {
 h1 {
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #ffffff; /* Original text color */
 }
 
 p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    color: #ffffff; /* Original text color */
 }
 
-/* Links - Only GitHub & YouTube text are blue */
+/* Links */
 .links {
     display: flex;
     gap: 20px;
 }
 
-.link {
+/* Make only GitHub and YouTube links blue */
+.github-link, .youtube-link {
     text-decoration: none;
     color: #4ea8de; /* Blue color */
     font-size: 1.2rem;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.link:hover {
+.github-link:hover, .youtube-link:hover {
     color: #6ec1e4;
     transform: scale(1.1);
 }
 
+/* Theme toggle button */
 #theme-toggle {
     background: none;
     border: none;
@@ -70,11 +74,16 @@ p {
     color: #000000; /* Default text color */
 }
 
-.light-mode .link {
+.light-mode h1, 
+.light-mode p {
+    color: #000000; /* Keep other text black */
+}
+
+.light-mode .github-link, .light-mode .youtube-link {
     color: #0055aa; /* Blue color in light mode */
 }
 
-.light-mode .link:hover {
+.light-mode .github-link:hover, .light-mode .youtube-link:hover {
     color: #0033cc;
 }
 
@@ -85,5 +94,6 @@ p {
 .light-mode #theme-toggle:hover {
     color: #333333;
 }
+
 
 
